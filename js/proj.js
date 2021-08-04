@@ -290,7 +290,7 @@ $('.img8').hover(function () {
     $(".word8").fadeOut();
 })
 
-$("button").click(function () {
+$(".button").click(function () {
     var name = $("#Name").val();
     alert(name + ", We have received your message. Thank you for reaching out to us.");
 });
