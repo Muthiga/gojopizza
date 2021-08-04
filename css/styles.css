@@ -120,3 +120,15 @@
   background-color: #04AA6D;
   color: white;
 }
+#head{
+  text-align: center;
+}
+.bcg{
+  background-image: url("../images/pizza3.jpg");
+}
+#icons{
+  text-align:center;
+}
+.del{
+  text-align: center;
+}
