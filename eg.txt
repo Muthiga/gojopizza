@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Gojo's Pizzeria</title>
+
+	<link rel="icon" href="./images/PizzaIcon.png">
+	<link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+	
+</head>
+
+<body>
+	<div class="header1">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img src="./images/PizzaIcon.png" width="30" height="30" class="d-inline-block align-top" alt=""> Gojo's Pizzeria
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+			 aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="./index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./menu.html">Menu</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./order.html">Order</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./about.html">About</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main class="container main-content">
+			<div class="row w-75 mx-auto h-75  text-center">
+					<div class="col-md-12">
+		
+		
+					</div>
+		
+				</div>
+            </div>
+				<div class="row w-75 mx-auto  mt-5 text-center dflex justify-content-center Mycontainer">
+		
+					<div class= "col-sm-12 col-md-4  text-center flex-item   myItem">
+						
+							<div class="card mr-3  mb-5 border" style="width: 15rem; height: 20rem; ">
+									<img  src="images/veggie_pizza.png" width="190" hieght="90" alt="about us">
+									<div class="card-body">
+									  <h5 class="card-title">About Us</h5>
+									  <p class="card-text">Welcome to Gojo's Pizza, home of the best pizza in town.</p>
+									  <a href="#" class="btn btn-primary">About Us</a>
+									</div>
+								  </div>
+						
+					   
+					</div>
+					<div class= "col-sm-12 col-md-4   text-center mx-auto  myItem ">
+							
+									<div class="card mr-3  mb-5" style="width: 15rem; height: 20rem;">
+											<img class="card-img-top" src="images/Pizza-menu-t.jpg" width="120" hieght="60" alt="Card image cap">
+											<div class="card-body">
+											  <h5 class="card-title">Menu</h5>
+											  <p class="card-text">Enjoy a blend of our classic and deluxe Pizzas</p>
+											  <a href="#" class="btn btn-primary">Menu</a>
+											</div>
+										  </div>
+							
+							</div>
+					<div class ="col-sm-12 col-md-4">
+							
+									<div class="card mr-3 mb-5" style="width: 15rem; height: 20rem;">
+											<img class="card-img-top" src="images/contact.jpg" width="120" hieght="60" alt="Contact">
+											<div class="card-body">
+											  <h5 class="card-title">Contact</h5>
+											  <p class="card-text">Need to thank our chefs, Need to make a suggestion, compliment or complaint? You can reach us here.</p>
+											  <a href="#" class="btn btn-primary">Contact</a>
+											</div>
+										  </div>
+							
+					</div>
+		
+				</div>
+	</main>
+    <footer class="footer bg-light text-dark border-top border-info">
+		<div class="container">
+
+			<img src="./images/PizzaIcon.png" width="30" height="30" class="d-inline-block align-middle" alt="">
+			The best pizza in town!
+		</div>
+	</footer>
+	
+    
+    
+    
+    <div id="reserve">
+        <h5>Enter full name and table size:</h5>
+        <form class="form-inline">
+            <div class="form-group">
+                <input type="text" class="form-control mb-2 mr-sm-2" id="Name" placeholder="Enter your full Name">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control mb-2 mr-sm-2" id="numreserve" min="1" max="10" value="1">
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-dark mb-2 mr-sm-2" id="submitRes">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+    $("#chooseReservation").click(function(event){
+        event.preventDefault();
+        alert("5$ Reservation charges will be added to your bill at the restaurant. Press 'OK' to continue")
+        $("#reserve").show();
+        $("#chooseDeliver").hide();
+    });
+    
+</body>
+var pricing = (sizePrice + toppingsPrice + crustPrice) * amount;
+console.log("pricing: "+pricing);
+totalPrice.push(pricing);
+console.log(totalPrice);
+if(totalPrice.length>0){
+    for(var i=0;i<totalPrice.length;i++){
+        sumTotal+=totalPrice[i];
+        console.log("sum "+sumTotal);
+    }
+}
+return (sizePrice + toppingsPrice + crustPrice) * amount;
+}
+
+</html>

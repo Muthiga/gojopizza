@@ -1,0 +1,10 @@
+.header{
+    color:black
+}
+.types{
+    background-image: url("../images/pesto.png");
+    background-attachment: fixed;
+    height: 530px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
